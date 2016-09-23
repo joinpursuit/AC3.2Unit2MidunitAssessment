@@ -1,7 +1,7 @@
 # Grading Rubric
 
 
-Using (/README.md) as reference, it has three basic sections:
+Using the [README](/README.md) as reference, it has three basic sections:
 
 1. The git setup **21pts.**
 2. The first half (1 - 7) **49pts.**

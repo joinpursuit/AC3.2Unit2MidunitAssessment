@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AC3_2Unit2MidunitAssessment" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGi-i8-dK6">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="cfS-qw-FND"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfZ-6m-UPP">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="MBr-3G-O6b"/>
+                                    <constraint firstAttribute="height" constant="40" id="fmm-f9-BkV"/>
+                                </constraints>
+                                <state key="normal" title="Prompt"/>
+                                <connections>
+                                    <action selector="promptButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9R2-Fb-adJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mqw-ue-XF2">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="e2c-m9-x7t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="te7-UO-nWD">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="xVC-SA-DPt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xs-5j-fZW">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2bw-se-Vv8"/>
+                                    <constraint firstAttribute="width" constant="100" id="vHr-oH-seG"/>
+                                </constraints>
+                                <state key="normal" title="Script Prompt"/>
+                                <connections>
+                                    <action selector="scriptPromptButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Eb-57-VDC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XGi-i8-dK6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="3nP-iW-uOZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mqw-ue-XF2" secondAttribute="trailing" id="7vJ-Cn-c5F"/>
+                            <constraint firstItem="te7-UO-nWD" firstAttribute="top" secondItem="Mqw-ue-XF2" secondAttribute="bottom" constant="20" id="C2k-fK-zgk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XGi-i8-dK6" secondAttribute="trailing" id="KGN-pR-9jE"/>
+                            <constraint firstItem="1xs-5j-fZW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="MZ3-JE-mKZ"/>
+                            <constraint firstItem="te7-UO-nWD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="TI3-gu-jlm"/>
+                            <constraint firstItem="XGi-i8-dK6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Te3-Ks-L8Q"/>
+                            <constraint firstItem="qfZ-6m-UPP" firstAttribute="top" secondItem="XGi-i8-dK6" secondAttribute="bottom" constant="20" id="WBs-Er-4qA"/>
+                            <constraint firstItem="Mqw-ue-XF2" firstAttribute="top" secondItem="qfZ-6m-UPP" secondAttribute="bottom" constant="60" id="XuW-kO-6sk"/>
+                            <constraint firstItem="1xs-5j-fZW" firstAttribute="top" secondItem="te7-UO-nWD" secondAttribute="bottom" constant="20" id="ZJ3-2S-c1U"/>
+                            <constraint firstItem="Mqw-ue-XF2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cA7-tU-Kfh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="te7-UO-nWD" secondAttribute="trailing" id="qk2-Ne-ckk"/>
+                            <constraint firstItem="qfZ-6m-UPP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="v07-Ga-cSt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="characterLineLabel" destination="te7-UO-nWD" id="B8v-I6-Yfj"/>
+                        <outlet property="characterNameLabel" destination="Mqw-ue-XF2" id="iOJ-jL-n6w"/>
+                        <outlet property="lineLabel" destination="XGi-i8-dK6" id="ctc-Qq-wJw"/>
+                        <outlet property="p1ButtonLabel" destination="qfZ-6m-UPP" id="Tnb-bW-YR5"/>
+                        <outlet property="p2ButtonLabel" destination="1xs-5j-fZW" id="bBk-N5-Jat"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

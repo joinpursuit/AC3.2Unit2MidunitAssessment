@@ -100,44 +100,32 @@ class MonologueViewController: UIViewController {
     
     
 
-    
-
     @IBAction func scriptPromptButtonTapped(_ sender: UIButton) {
-        changeTheLabels()
-    }
-    
-    func changeCharacterName() {
-        let character = script.monologues[counter2].character
-       
-
-        characterNameLabel.text = character
-        counter2 += 1
-    }
-    
-    func changeCharacterMonologue() -> Bool {
-        let lines = script.monologues[counter2].lines
-        
-        if lineCounter == lines.count {
-            lineCounter = 0
-            return true
-        }
-
-        characterLineLabel.text = lines[lineCounter]
-        lineCounter += 1
-                return false
-    }
-    
-    func changeTheLabels() {
         if counter2 == script.monologues.count {
             counter2 = 0
         }
-        _ = changeCharacterMonologue()
+        let lines = script.monologues[counter2].lines
+        let character = script.monologues[counter2].character
+    
         
-        if changeCharacterMonologue() {
-            changeCharacterName()
+        changeCharacterAndMonologue(lines: lines, character: character)
+        
+        if lineCounter == lines.count {
+            lineCounter = 0
+            counter2 += 1
         }
-        
     }
+
+    
+    func changeCharacterAndMonologue(lines: [String], character: String) {
+        
+        characterNameLabel.text = character
+        characterLineLabel.text = lines[lineCounter]
+        
+    
+        lineCounter += 1
+    }
+    
     
 }
 

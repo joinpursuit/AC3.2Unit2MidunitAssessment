@@ -107,6 +107,5 @@ class ViewController: UIViewController {
             characterCounter += 1
             lineCounter = 0
         }
-        //print(script.monologues[characterCounter].character, script.monologues[characterCounter].lines[lineCounter])
     }
 }

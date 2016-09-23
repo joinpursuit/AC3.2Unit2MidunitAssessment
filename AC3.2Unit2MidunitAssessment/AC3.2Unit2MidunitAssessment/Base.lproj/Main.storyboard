@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AC3_2Unit2MidunitAssessment" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Line Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLz-zZ-sC5">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifv-2Y-Tip">
+                                <state key="normal" title="Prompt"/>
+                                <connections>
+                                    <action selector="promptButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Xe-S7-Jw5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Character Name Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7L-kZ-7AN">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Character Line Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdg-je-H4s">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cM8-Am-bsu">
+                                <frame key="frameInset" minX="16" minY="381" width="96" height="30"/>
+                                <state key="normal" title="Script Prompt"/>
+                                <connections>
+                                    <action selector="scriptPromptButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="isl-MP-Png"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="gdg-je-H4s" secondAttribute="trailing" id="ACO-lb-Cld"/>
+                            <constraint firstItem="cM8-Am-bsu" firstAttribute="top" secondItem="gdg-je-H4s" secondAttribute="bottom" constant="8" id="DDd-Rh-kgv"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="D7L-kZ-7AN" secondAttribute="leading" id="HZb-Hs-agK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PLz-zZ-sC5" secondAttribute="trailing" id="Hub-TD-oMZ"/>
+                            <constraint firstItem="ifv-2Y-Tip" firstAttribute="top" secondItem="PLz-zZ-sC5" secondAttribute="bottom" constant="8" id="I1K-Y9-Cqd"/>
+                            <constraint firstItem="PLz-zZ-sC5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="32" id="LSw-Go-I4F"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="D7L-kZ-7AN" secondAttribute="trailing" id="Ojy-Gz-Zm6"/>
+                            <constraint firstItem="D7L-kZ-7AN" firstAttribute="top" secondItem="ifv-2Y-Tip" secondAttribute="bottom" constant="212" id="Re0-TF-AEg"/>
+                            <constraint firstItem="PLz-zZ-sC5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="UYM-WF-7yR"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="gdg-je-H4s" secondAttribute="leading" id="bYr-jv-tFZ"/>
+                            <constraint firstItem="gdg-je-H4s" firstAttribute="top" secondItem="D7L-kZ-7AN" secondAttribute="bottom" constant="8" id="f6a-Tv-nhu"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ifv-2Y-Tip" secondAttribute="leading" id="sUE-mb-ey7"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="cM8-Am-bsu" secondAttribute="leading" id="z7g-TW-oNN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="characterLineLabel" destination="gdg-je-H4s" id="TFt-o2-irX"/>
+                        <outlet property="characterNameLabel" destination="D7L-kZ-7AN" id="b0e-iN-qC2"/>
+                        <outlet property="lineLabel" destination="PLz-zZ-sC5" id="pqU-0o-rxF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="142.57871064467767"/>
+        </scene>
+    </scenes>
+</document>

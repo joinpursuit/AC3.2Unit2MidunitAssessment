@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6DD297D7419A43E8C5FA5F40FBFF045CA2FE51EE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6DD297D7419A43E8C5FA5F40FBFF045CA2FE51EE" : 9223372036854775807,
+    "3CCF31241C04A46A70B2ED63F3F9B754376D6710" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "96791168-4028-430C-9CD3-7D22B5446263",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6DD297D7419A43E8C5FA5F40FBFF045CA2FE51EE" : "AC3.2Unit2MidunitAssessment\/",
+    "3CCF31241C04A46A70B2ED63F3F9B754376D6710" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AC3.2Unit2MidunitAssessment",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AC3.2Unit2MidunitAssessment\/AC3.2Unit2MidunitAssessment.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/emilychu110\/AC3.2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3CCF31241C04A46A70B2ED63F3F9B754376D6710"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/C4Q\/AC3.2Unit2MidunitAssessment.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6DD297D7419A43E8C5FA5F40FBFF045CA2FE51EE"
+    }
+  ]
+}

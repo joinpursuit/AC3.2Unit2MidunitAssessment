@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AC3_2Unit2MidunitAssessment" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lineLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Umz-XD-eQx">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Q2-dk-fOs">
+                                <state key="normal" title="Click Me"/>
+                                <connections>
+                                    <action selector="prompt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pbS-Gf-Oon"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="128" image="theatre" translatesAutoresizingMaskIntoConstraints="NO" id="0jc-qY-3xG"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="characterNameLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dka-0q-Nu0">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="characterLineLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDC-kl-NHP">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4AK-ZM-z0u">
+                                <state key="normal" title="click me"/>
+                                <connections>
+                                    <action selector="scriptButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DXV-rM-GpL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4AK-ZM-z0u" firstAttribute="top" secondItem="uDC-kl-NHP" secondAttribute="bottom" constant="8" id="2db-cK-8le"/>
+                            <constraint firstItem="uDC-kl-NHP" firstAttribute="centerX" secondItem="Dka-0q-Nu0" secondAttribute="centerX" id="AdK-xx-BEg"/>
+                            <constraint firstItem="Umz-XD-eQx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="109" id="I5W-g2-8KH"/>
+                            <constraint firstItem="0jc-qY-3xG" firstAttribute="centerX" secondItem="7Q2-dk-fOs" secondAttribute="centerX" id="KAC-Rq-YZu"/>
+                            <constraint firstItem="7Q2-dk-fOs" firstAttribute="centerX" secondItem="Umz-XD-eQx" secondAttribute="centerX" id="OY3-x4-B3y"/>
+                            <constraint firstItem="4AK-ZM-z0u" firstAttribute="centerX" secondItem="uDC-kl-NHP" secondAttribute="centerX" id="XUi-ca-nRa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0jc-qY-3xG" secondAttribute="trailing" constant="52" id="Ys9-Ph-dbm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0jc-qY-3xG" secondAttribute="bottom" constant="343" id="c8K-k9-TG2"/>
+                            <constraint firstItem="Dka-0q-Nu0" firstAttribute="top" secondItem="0jc-qY-3xG" secondAttribute="bottom" constant="61" id="d7E-rx-QYu"/>
+                            <constraint firstItem="Dka-0q-Nu0" firstAttribute="centerX" secondItem="0jc-qY-3xG" secondAttribute="centerX" id="drT-m8-PnW"/>
+                            <constraint firstItem="0jc-qY-3xG" firstAttribute="top" secondItem="7Q2-dk-fOs" secondAttribute="bottom" constant="8" id="eWM-pw-FWr"/>
+                            <constraint firstItem="0jc-qY-3xG" firstAttribute="top" secondItem="Umz-XD-eQx" secondAttribute="bottom" constant="46" id="msd-ef-9bs"/>
+                            <constraint firstItem="uDC-kl-NHP" firstAttribute="top" secondItem="Dka-0q-Nu0" secondAttribute="bottom" constant="8" id="peV-ap-1bP"/>
+                            <constraint firstItem="Umz-XD-eQx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r7c-nk-lal"/>
+                            <constraint firstItem="7Q2-dk-fOs" firstAttribute="top" secondItem="Umz-XD-eQx" secondAttribute="bottom" constant="8" id="rih-hQ-A5I"/>
+                            <constraint firstItem="0jc-qY-3xG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="sSU-Hc-Mky"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="characterLineLabel" destination="uDC-kl-NHP" id="gef-Mk-e8p"/>
+                        <outlet property="characterNameLabel" destination="Dka-0q-Nu0" id="lCN-VR-f2Q"/>
+                        <outlet property="lineLabel" destination="Umz-XD-eQx" id="qDd-wT-d85"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="theatre" width="300" height="220"/>
+    </resources>
+</document>

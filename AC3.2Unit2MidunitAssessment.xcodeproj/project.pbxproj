@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		E32AD4D91D9578E60050C3AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32AD4D81D9578E60050C3AD /* AppDelegate.swift */; };
-		E32AD4DB1D9578E60050C3AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32AD4DA1D9578E60050C3AD /* ViewController.swift */; };
+		E32AD4DB1D9578E60050C3AD /* StageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32AD4DA1D9578E60050C3AD /* StageViewController.swift */; };
 		E32AD4DE1D9578E60050C3AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E32AD4DC1D9578E60050C3AD /* Main.storyboard */; };
 		E32AD4E01D9578E60050C3AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E32AD4DF1D9578E60050C3AD /* Assets.xcassets */; };
 		E32AD4E31D9578E60050C3AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E32AD4E11D9578E60050C3AD /* LaunchScreen.storyboard */; };
 		E32AD4EE1D9578E70050C3AD /* AC3_2Unit2MidunitAssessmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32AD4ED1D9578E70050C3AD /* AC3_2Unit2MidunitAssessmentTests.swift */; };
 		E32AD4F91D9578E70050C3AD /* AC3_2Unit2MidunitAssessmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32AD4F81D9578E70050C3AD /* AC3_2Unit2MidunitAssessmentUITests.swift */; };
 		E32AD5071D957F7F0050C3AD /* script.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32AD5061D957F7F0050C3AD /* script.swift */; };
+		E3EF26791D97011A0027A970 /* lines.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EF26781D97011A0027A970 /* lines.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,7 @@
 /* Begin PBXFileReference section */
 		E32AD4D51D9578E60050C3AD /* AC3.2Unit2MidunitAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AC3.2Unit2MidunitAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E32AD4D81D9578E60050C3AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E32AD4DA1D9578E60050C3AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E32AD4DA1D9578E60050C3AD /* StageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageViewController.swift; sourceTree = "<group>"; };
 		E32AD4DD1D9578E60050C3AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E32AD4DF1D9578E60050C3AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E32AD4E21D9578E60050C3AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		E32AD4F81D9578E70050C3AD /* AC3_2Unit2MidunitAssessmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AC3_2Unit2MidunitAssessmentUITests.swift; sourceTree = "<group>"; };
 		E32AD4FA1D9578E70050C3AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E32AD5061D957F7F0050C3AD /* script.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = script.swift; path = ../script.swift; sourceTree = "<group>"; };
+		E3EF26781D97011A0027A970 /* lines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lines.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +101,14 @@
 		E32AD4D71D9578E60050C3AD /* AC3.2Unit2MidunitAssessment */ = {
 			isa = PBXGroup;
 			children = (
-				E32AD5061D957F7F0050C3AD /* script.swift */,
+				E32AD4DA1D9578E60050C3AD /* StageViewController.swift */,
 				E32AD4D81D9578E60050C3AD /* AppDelegate.swift */,
-				E32AD4DA1D9578E60050C3AD /* ViewController.swift */,
+				E32AD5061D957F7F0050C3AD /* script.swift */,
 				E32AD4DC1D9578E60050C3AD /* Main.storyboard */,
 				E32AD4DF1D9578E60050C3AD /* Assets.xcassets */,
 				E32AD4E11D9578E60050C3AD /* LaunchScreen.storyboard */,
 				E32AD4E41D9578E60050C3AD /* Info.plist */,
+				E3EF26781D97011A0027A970 /* lines.swift */,
 			);
 			path = AC3.2Unit2MidunitAssessment;
 			sourceTree = "<group>";
@@ -262,7 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E32AD4DB1D9578E60050C3AD /* ViewController.swift in Sources */,
+				E32AD4DB1D9578E60050C3AD /* StageViewController.swift in Sources */,
+				E3EF26791D97011A0027A970 /* lines.swift in Sources */,
 				E32AD4D91D9578E60050C3AD /* AppDelegate.swift in Sources */,
 				E32AD5071D957F7F0050C3AD /* script.swift in Sources */,
 			);
@@ -509,6 +513,7 @@
 				E32AD4FF1D9578E70050C3AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E32AD5001D9578E70050C3AD /* Build configuration list for PBXNativeTarget "AC3.2Unit2MidunitAssessmentTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +522,7 @@
 				E32AD5021D9578E70050C3AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E32AD5031D9578E70050C3AD /* Build configuration list for PBXNativeTarget "AC3.2Unit2MidunitAssessmentUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +531,7 @@
 				E32AD5051D9578E70050C3AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

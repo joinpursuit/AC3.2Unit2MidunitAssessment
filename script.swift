@@ -18,6 +18,7 @@ class Script {
     let author: String
     let work: String
     let monologues: [Monologue]
+    //[ [: [] ], [: [] ], [: [] ] ]
     
     init(author: String, work: String, scriptDictionary: [[String:Any]]) {
         self.author = author

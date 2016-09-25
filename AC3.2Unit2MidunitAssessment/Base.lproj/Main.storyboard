@@ -19,35 +19,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kcc-um-KCQ">
-                                <frame key="frameInset" minX="157" minY="174" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Line" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kcc-um-KCQ">
+                                <color key="tintColor" red="0.52754950523376465" green="0.084991298615932465" blue="0.1818663477897644" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.97111022472381592" green="0.70601218730163273" blue="0.61281154623483169" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Name" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdP-KE-Fxx">
+                                <frame key="frameInset" minX="16" minY="94" width="45" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdP-KE-Fxx">
-                                <frame key="frameInset" minX="157" minY="137" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fih-AW-poC">
-                                <frame key="frameInset" minX="68" minY="252" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fih-AW-poC">
+                                <frame key="frameInset" minX="311" minY="94" width="51" height="30"/>
+                                <state key="normal" title="Prompt"/>
                                 <connections>
                                     <action selector="scriptPromptButtonTapped:" destination="QRV-WT-MKI" eventType="touchUpInside" id="jOR-Rp-xjU"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zc3-sd-edD">
+                                <frame key="frameInset" minX="67" minY="358" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hmt-5a-kWU">
+                                <frame key="frameInset" minX="67" minY="222" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.52754950523376465" green="0.084991298615932465" blue="0.1818663477897644" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Kcc-um-KCQ" firstAttribute="centerX" secondItem="pI7-4u-cFq" secondAttribute="centerX" id="GZj-qk-x5V"/>
+                            <constraint firstItem="Fih-AW-poC" firstAttribute="leading" secondItem="hdP-KE-Fxx" secondAttribute="trailing" constant="250" id="PTW-93-njq"/>
+                            <constraint firstItem="Kcc-um-KCQ" firstAttribute="centerX" secondItem="pI7-4u-cFq" secondAttribute="centerX" id="iIW-WU-Sqv"/>
+                            <constraint firstItem="Kcc-um-KCQ" firstAttribute="top" secondItem="yqf-rx-q1o" secondAttribute="bottom" constant="124" id="oAl-jo-jr8"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="8nv-mf-Z2A"/>
                     <connections>
                         <outlet property="characterLineLabel" destination="Kcc-um-KCQ" id="mfh-k5-wgu"/>
                         <outlet property="characterNameLabel" destination="hdP-KE-Fxx" id="lSO-G8-d5w"/>
+                        <outlet property="prompt2" destination="Fih-AW-poC" id="eDM-DJ-uZU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K16-ap-6do" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -57,7 +69,6 @@
         <!--Item 1-->
         <scene sceneID="jOg-mQ-8si">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cp1-VV-39w" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="xY1-tX-MDI" customClass="StageViewController" customModule="AC3_2Unit2MidunitAssessment" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gQk-la-HWy"/>
@@ -76,33 +87,42 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmj-sk-W5l">
-                                <frame key="frameInset" minX="150" minY="51" width="74" height="30"/>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="gmj-sk-W5l">
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="74" id="CfL-RD-1jr"/>
                                     <constraint firstAttribute="height" constant="30" id="ecT-yn-LKn"/>
-                                    <constraint firstAttribute="width" constant="46" id="jkr-Z3-5Qd"/>
+                                    <constraint firstAttribute="width" constant="61" id="jkr-Z3-5Qd"/>
                                 </constraints>
-                                <state key="normal" title="prompt"/>
+                                <state key="normal" title="Prompt"/>
                                 <connections>
                                     <action selector="promptButtonTapped:" destination="xY1-tX-MDI" eventType="touchUpInside" id="gJR-Bp-xHa"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="polonius" translatesAutoresizingMaskIntoConstraints="NO" id="JGP-TM-nKr">
+                                <frame key="frameInset" minX="96" minY="170" width="182" height="236"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.076152510941028595" green="0.10413698107004166" blue="0.28313297033309937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="5B3-dY-JW2" firstAttribute="top" secondItem="gmj-sk-W5l" secondAttribute="bottom" constant="49" id="Du6-se-Hv2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gmj-sk-W5l" secondAttribute="trailing" constant="141" id="Nsw-Ez-llZ"/>
+                            <constraint firstItem="gmj-sk-W5l" firstAttribute="leading" secondItem="ZGk-Sb-CXz" secondAttribute="leadingMargin" constant="141" id="PVN-2c-Fnc"/>
+                            <constraint firstItem="gmj-sk-W5l" firstAttribute="centerX" secondItem="ZGk-Sb-CXz" secondAttribute="centerX" id="QnI-ol-su0"/>
+                            <constraint firstItem="JGP-TM-nKr" firstAttribute="top" secondItem="5B3-dY-JW2" secondAttribute="bottom" constant="19" id="Qzr-8X-Irc"/>
                             <constraint firstItem="5B3-dY-JW2" firstAttribute="centerX" secondItem="ZGk-Sb-CXz" secondAttribute="centerX" id="SL6-WD-Meb"/>
                             <constraint firstItem="5B3-dY-JW2" firstAttribute="top" secondItem="ZGk-Sb-CXz" secondAttribute="topMargin" constant="130" id="Syu-b3-5eJ"/>
-                            <constraint firstItem="gmj-sk-W5l" firstAttribute="centerX" secondItem="ZGk-Sb-CXz" secondAttribute="centerX" id="YXL-bt-L9Q"/>
+                            <constraint firstItem="JGP-TM-nKr" firstAttribute="top" secondItem="ZGk-Sb-CXz" secondAttribute="topMargin" constant="170" id="WRd-et-Wxi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gmj-sk-W5l" secondAttribute="trailing" constant="141" id="lTe-lb-e0h"/>
+                            <constraint firstItem="gmj-sk-W5l" firstAttribute="top" secondItem="ZGk-Sb-CXz" secondAttribute="topMargin" constant="92" id="oC1-d7-I9f"/>
+                            <constraint firstItem="JGP-TM-nKr" firstAttribute="centerX" secondItem="ZGk-Sb-CXz" secondAttribute="centerX" id="p76-To-KpV"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="Jao-od-W5K"/>
                     <connections>
                         <outlet property="lineLabel" destination="5B3-dY-JW2" id="Vxf-ga-uM5"/>
+                        <outlet property="polonius" destination="JGP-TM-nKr" id="NsQ-ef-VXg"/>
                         <outlet property="promptButton" destination="gmj-sk-W5l" id="g3i-23-ksr"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cp1-VV-39w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="268" y="-332.38380809595208"/>
         </scene>
@@ -125,4 +145,7 @@
             <point key="canvasLocation" x="-810" y="30"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="polonius" width="220" height="293"/>
+    </resources>
 </document>

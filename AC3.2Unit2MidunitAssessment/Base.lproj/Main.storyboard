@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fRD-Z4-HFK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fRD-Z4-HFK">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -26,13 +26,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Name" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdP-KE-Fxx">
-                                <frame key="frameInset" minX="16" minY="94" width="45" height="21"/>
+                                <frame key="frameInset" minX="16" minY="94" width="121" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="121" id="828-o9-S5J"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fih-AW-poC">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fih-AW-poC">
                                 <frame key="frameInset" minX="311" minY="94" width="51" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Prompt"/>
                                 <connections>
                                     <action selector="scriptPromptButtonTapped:" destination="QRV-WT-MKI" eventType="touchUpInside" id="jOR-Rp-xjU"/>
@@ -50,7 +54,6 @@
                         <color key="backgroundColor" red="0.52754950523376465" green="0.084991298615932465" blue="0.1818663477897644" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Kcc-um-KCQ" firstAttribute="centerX" secondItem="pI7-4u-cFq" secondAttribute="centerX" id="GZj-qk-x5V"/>
-                            <constraint firstItem="Fih-AW-poC" firstAttribute="leading" secondItem="hdP-KE-Fxx" secondAttribute="trailing" constant="250" id="PTW-93-njq"/>
                             <constraint firstItem="Kcc-um-KCQ" firstAttribute="centerX" secondItem="pI7-4u-cFq" secondAttribute="centerX" id="iIW-WU-Sqv"/>
                             <constraint firstItem="Kcc-um-KCQ" firstAttribute="top" secondItem="yqf-rx-q1o" secondAttribute="bottom" constant="124" id="oAl-jo-jr8"/>
                         </constraints>
@@ -64,7 +67,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K16-ap-6do" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="268" y="324"/>
+            <point key="canvasLocation" x="268" y="323.38830584707648"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="jOg-mQ-8si">
